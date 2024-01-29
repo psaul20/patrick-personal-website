@@ -15,6 +15,6 @@ jobs:
       - name: Sync
         uses: patrickwyler/gcs-bucket-sync-action@1.4
         with:
-          secrets: ${{ secrets.google_service_account_credentials }}
+          secrets: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_CREDENTIALS }}
           bucket: 'website-bucket-20'
           exclude: '.*\.md$|\.gitignore$|\.git/.*$|\.github/.*$'
