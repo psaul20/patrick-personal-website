@@ -854,9 +854,9 @@ section {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
-.contact .info i {
+.contact i {
   font-size: 20px;
-  color: #149ddd;
+  color: #000000;
   float: left;
   width: 44px;
   height: 44px;
@@ -868,11 +868,10 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.contact .info h4 {
-  padding: 0 0 0 60px;
+.contact h4 {
+  padding: 0 0 0 10px;
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 5px;
   color: #050d18;
 }
 
