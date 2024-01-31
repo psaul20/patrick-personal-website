@@ -18,4 +18,4 @@ jobs:
           secrets: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_CREDENTIALS }}
           bucket: 'website-bucket-20'
           exclude: '.*\.md$|\.gitignore$|\.git/.*$|\.github/.*$'
-          cache_control: 'no-store,no-cache,max-age=0'
+          cache_control: 'no-cache'
