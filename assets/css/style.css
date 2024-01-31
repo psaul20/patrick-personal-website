@@ -292,7 +292,7 @@ h6 {
 
 @media (max-width: 768px) {
   #hero {
-    background: url('../img/CT_Wide_Left_9x16.png') center;
+    background: url('../img/CT_Wide_Left_9x16.png') right;
   }
 
   #hero h1 {
