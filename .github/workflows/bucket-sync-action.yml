@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Sync
-        uses: psaul20/gcs-bucket-sync-action-gcloud-storage
+        uses: psaul20/gcs-bucket-sync-action-gcloud-storage@v.1
         with:
           secrets: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_CREDENTIALS }}
           bucket: 'website-bucket-20'
