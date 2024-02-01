@@ -640,7 +640,30 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 40px;
+  padding: 2rem 5rem;
+}
+
+.portfolio-details .row {
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-details .numbers .card {
+  padding: 20px;
+  box-shadow: 0px 0 20px rgba(5, 13, 24, 0.08);
+}
+
+.portfolio-details .numbers .card i {
+  font-size: 3rem;
+  color: #149ddd;
+  stroke-width: 10px;
+}
+
+.portfolio-details .numbers .card p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  width: 250px;
 }
 
 .portfolio-details .portfolio-details-slider img {
