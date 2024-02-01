@@ -9,8 +9,10 @@
     <!-- Favicons -->
     <link href="../assets/img/ps_headshot_circle.png" rel="icon" />
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i,700,700i|Barlow+Condensed:300,300i,400,400i,500,500i,600,600i,700,700i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
     />
 
@@ -86,75 +88,25 @@
       <!-- End Header -->
 
       <!-- ======= Portfolio Details Section ======= -->
-      <section id="portfolio-details" class="portfolio-details">
-        <div class="container align-items-center justify-content-center">
+      <!-- TODO: Fix sizing to 16x9 -->
+      <section id="portfolio-details" class="portfolio-details p-2">
+        <div class="container align-items-center justify-content-center mt-4">
           <div class="row align-items-center justify-content-center">
-            <h1>Deloitte Greenhouse Innovation</h1>
+            <h1>Executive Risk Dashboard</h1>
             <p class="mb-4">
-              <em>Catalyzed innovation for Fortune 100 executives through human-centered design</em>
+              <em
+                >Drove operations executive decision-making through agile data system
+                development</em
+              >
             </p>
-            <div id="innovationCarousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators mb-0">
-                <button
-                  type="button"
-                  data-bs-target="#innovationCarousel"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#innovationCarousel"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#innovationCarousel"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#innovationCarousel"
-                  data-bs-slide-to="3"
-                  aria-label="Slide 4"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="ratio ratio-16x9">
-                    <iframe
-                      src="https://www.youtube-nocookie.com/embed/EMvaIJORMEc?si=33Q01PFqJxk3Zf8W&controls=0&autoplay=1&mute=1&loop=1&playlist=EMvaIJORMEc"
-                      title="Greenhouse"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <img src="../assets/img/portfolio/GH_Gallery.png" class="img-fluid" alt="" />
-                </div>
-                <div class="carousel-item">
-                  <div class="ratio ratio-16x9">
-                    <iframe
-                      src="https://www.youtube-nocookie.com/embed/TjFba5nK5mo?si=IDsmZSugWIDXe1qot&controls=0&autoplay=1&mute=1&loop=1&playlist=TjFba5nK5mo"
-                      title="Greenhouse"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="../assets/img/portfolio/GH_Dome.png" class="img-fluid" alt="" />
-                </div>
-              </div>
-            </div>
           </div>
+
+          <div class="row align-items-center justify-content-center">
+            <img
+              src="../assets/img/portfolio/PowerBI_Example_16x9.png "
+              class="img-fluid"
+              alt=""
+            />
 
           <hr style="margin-top: 30px" />
 
@@ -165,7 +117,7 @@
                 <div class="card-body">
                   <div class="vstack align-items-center justify-content-center">
                     <i class="bi bi-people-fill"></i>
-                    <p>100+ Client Executives Impacted</p>
+                    <p>50+ FTE Hours/week Time Savings</p>
                   </div>
                 </div>
               </div>
@@ -175,7 +127,7 @@
                 <div class="card-body">
                   <div class="vstack align-items-center justify-content-center">
                     <i class="bi bi-bar-chart-line-fill"></i>
-                    <p>$18MM+ Sales Opportunities Created</p>
+                    <p>$1MM+ ARR Service Contract Signed</p>
                   </div>
                 </div>
               </div>
@@ -184,8 +136,8 @@
               <div class="card">
                 <div class="card-body">
                   <div class="vstack align-items-center justify-content-center">
-                    <i class="bi bi-magic"></i>
-                    <p>18 Unique Tech Innovation Showcases Designed</p>
+                    <i class="bi bi-database-check"></i>
+                    <p>10+ Source Systems Reconciled</p>
                   </div>
                 </div>
               </div>
@@ -194,42 +146,38 @@
           <div class="row d-flex">
             <h3>Context</h3>
             <p>
-              The Deloitte Greenhouse is a network of innovation centers with 40+ locations
-              internationally, leveraging human-centered design principles to design & facilitate
-              executive strategy workshops for Fortune 100 clients. The Houston "Next Generation"
-              Greenhouse is our largest Greenhouse to date, with a unique focus on tech-driven
-              innovation. I was recruited as a founding member given my expertise in tech strategy
-              and passion for innovation and design thinking.
+              Deloitte was engaged to support a large-scale operations transformation for a large
+              oil & gas pipeline company ($33B ARR). In the wake of recent safety incidents, the
+              company was looking to overhaul their asset reliability systems, processes, and
+              organizational structure for managing risk & safety across 18,000+ miles of pipe, 300+
+              employees, and 7 primary risk vectors.
             </p>
             <h3>My Role</h3>
             <p>
-              As an Innovation & Experience Manager, I was responsible for leading the end-to-end
-              discovery, design, development, and implementation of innovation solution showcases,
-              as well as delivering compelling client experiences leveraging these solutions. To
-              accomplish these goals, I worked with firm leadership to establish a resourcing pool
-              of 20+ innovation-minded practitioners, and drove a scaled agile process for
-              identifying business objectives, defining & prioritizing MVP concepts showcases to
-              meet those objectives.
+              As an operations transformation consultant, I was assigned ownership of a core pillar
+              associated with the transformation: Risk Analytics. Applying human-centered design
+              principles, I interviewed 10+ functional group managers to understand their current
+              pain points and needs as it related to gathering, processing, reporting, and acting on
+              risk & operations data, and performed analysis across 10+ source data systems to
+              understand data lineage & sources of truth.
               <br />
               <br />
-              With clear objectives in mind, I leveraged my network across Deloitte's innovation
-              ecosystem to understand common challenges our clients faced across industries,
-              identify novel solutions, and managing a team of designers, researchers, analysts and
-              developers to implement and iterate on solution showcases. These solution showcases
-              were delivered in a museum gallery-like format, using state of the art display
-              technology (touchscreens, 360 degree projection, AR/VR, magnetic prints etc.) to
-              create visually appealing and interactive experiences to promote maximum client
-              engagement.
+              With a clear understanding of the current state, I collaborated with my team to mock
+              up 40+ potential metrics, designed to rapidly convey the state of operations & risk
+              management to an executive audience. From there, I led a team of 5 operations
+              executives through a series of workshops to refine and prioritize the most impactful
+              metrics. I also worked with our client sponsor to develop a business case to establish
+              a dedicated team to the development of a data system to support the dashboard on an
+              ongoing basis, representing a service contract of $1MM+ ARR.
               <br />
               <br />
-              As our innovation showcase inventory grew from 0 to 18+, we began leveraging those
-              showcases as part of our client executive experiences. I became the de facto expert
-              for delivering a compelling experience to our clients. As part of 10+
-              innovation-focused experiences, I led 100+ client executives through demonstrations,
-              designed and delivered hands-on exercises, and facilitated discussion around the
-              unique challenges their organizations faced, and how innovative technologies could be
-              applied to address those challenges in an novel way to maximize competitive
-              advantages.
+              With the business case approved, I led a first-of-its kind agile team of 6 analysts,
+              designers, data engineers, and solution architects to develop, test, deploy, and
+              refine the dashboard and underlying data system based on regular user feedback. As we
+              implemented and iterated on the dashboard, our executive audience began incorporating
+              it into their weekly operations review meetings (total usage grew from 0 to 10+ weekly
+              viewing hours amongst executive users), and saving 50+ FTE hours/week in reporting
+              burden across the organization.
             </p>
           </div>
         </div>
