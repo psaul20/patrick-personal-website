@@ -641,7 +641,7 @@ section {
 --------------------------------------------------------------*/
 
 .portfolio-details .carousel {
-  width: 60rem;
+  /* width: 60rem; */
   border: 0;
 }
 
