@@ -1131,3 +1131,32 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+/*--------------------------------------------------------------
+# Skills List
+--------------------------------------------------------------*/
+
+.skills ul {
+  list-style:
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.skills ul li {
+  padding-bottom: 0.5rem;
+}
+
+/*--------------------------------------------------------------
+# Text Formatting
+--------------------------------------------------------------*/
+
+.caps {
+  text-transform: uppercase;
+  /* font-style: italic; */
+  font-weight: 600;
+}
+
+ul {
+  list-style-position: inside;
+}
