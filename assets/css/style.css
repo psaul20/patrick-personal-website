@@ -640,18 +640,20 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 
-.portfolio-details .row {
-  justify-content: center;
-  align-items: center;
+.portfolio-details .carousel {
+  width: 60rem;
+  border: 0;
 }
 
 .portfolio-details .numbers .card {
   padding: 20px;
   box-shadow: 0px 0 20px rgba(5, 13, 24, 0.08);
+  width: 15rem;
+  min-width: min-content;
 }
 
 .portfolio-details .numbers .card i {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #149ddd;
   stroke-width: 10px;
 }
@@ -660,7 +662,12 @@ section {
   font-size: 16px;
   text-align: center;
   font-weight: bold;
-  width: 250px;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-details .numbers .card-body {
+  padding: 0px;
 }
 
 .portfolio-details .portfolio-details-slider img {
