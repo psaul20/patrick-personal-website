@@ -641,15 +641,13 @@ section {
 --------------------------------------------------------------*/
 
 .portfolio-details .carousel {
-  /* width: 60rem; */
   border: 0;
 }
 
 .portfolio-details .numbers .card {
   padding: 20px;
   box-shadow: 0px 0 20px rgba(5, 13, 24, 0.08);
-  width: 15rem;
-  min-width: min-content;
+  min-width: 15rem;
 }
 
 .portfolio-details .numbers .card i {
