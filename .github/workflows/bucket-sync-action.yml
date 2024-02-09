@@ -17,5 +17,5 @@ jobs:
         with:
           secrets: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_CREDENTIALS }}
           bucket: 'website-bucket-20'
-          exclude: '.*\.md$|\.gitignore$|\.git/.*$|\.github/.*$|\.vscode/.*$|\.eslintrc\.cjs$|\.prettierrc\.json$|templates/.*$'
+          exclude: '.*\.md$|\.gitignore$|\.git/.*$|\.github/.*$|\.vscode/.*$|\.eslintrc\.cjs$|\.prettierrc\.json$|templates/.*$|email/.*$'
           cache_control: 'no-cache'
