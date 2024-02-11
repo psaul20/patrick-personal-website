@@ -13,9 +13,10 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Sync
-        uses: psaul20/gcs-bucket-sync-action-gcloud-storage@v.1
+        uses: psaul20/gcs-bucket-sync-action-gcloud-storage@v1
         with:
           secrets: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_CREDENTIALS }}
           bucket: 'website-bucket-20'
           exclude: '.*\.md$|\.gitignore$|\.git/.*$|\.github/.*$|\.vscode/.*$|\.eslintrc\.cjs$|\.prettierrc\.json$|templates/.*$|email/.*$'
           cache_control: 'no-cache'
+          sync_dir_from: 'src'
