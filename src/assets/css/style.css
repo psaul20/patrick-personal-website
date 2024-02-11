@@ -880,11 +880,19 @@ section {
   padding-bottom: 130px;
 }
 
+/* .contact form :invalid {
+  border: 1px solid red;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+} */
+
 .contact .info {
   padding: 30px;
   background: #fff;
-  width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact :placeholder-shown {
+  color: rgba(128, 128, 128, 0.143);
 }
 
 .contact i {
@@ -902,7 +910,6 @@ section {
 }
 
 .contact h4 {
-  padding: 0 0 0 10px;
   font-size: 22px;
   font-weight: 600;
   color: #050d18;
