@@ -387,12 +387,12 @@
             </a>
           </div>
           <div class="row m-auto" data-aos="fade-in">
-            <div class="info col-lg-6">
-              <div class="d-flex align-items-center mb-2">
-                <i class="bi bi-envelope"></i>
-                <h4 class="p-0 ms-2 mb-0">Email</h4>
-              </div>
+            <div id="formDiv" class="info col-lg-6" hidden>
               <form class="needs-validation" novalidate>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-envelope"></i>
+                  <h4 class="p-0 ms-2 mb-0">Email</h4>
+                </div>
                 <div class="mb-3">
                   <label for="sender-name" class="col-form-label">Your Name:</label>
                   <input type="text" class="form-control" id="sender-name" required />
@@ -412,6 +412,13 @@
                   <button type="submit" class="btn btn-primary">Send Email</button>
                 </div>
               </form>
+            </div>
+            <div id="after-submit" class="info d-flex align-items-center" data-aos="fade-in">
+              <i class="bi bi-check-circle-fill"></i>
+              <h4 class="p-0 ms-2 mb-0">Email Sent!</h4>
+              <button class="btn btn-primary ms-4 align-self-end" type="button" id="newForm">
+                Send Another
+              </button>
             </div>
           </div>
         </div>
