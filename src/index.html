@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9CPHWBPWE3"></script>
     <script>
@@ -249,6 +250,7 @@
                   <img
                     class="card-img-top w-100 object-fit-contain"
                     src="assets/img/portfolio/O+G_Digital_16x9.png"
+                    alt="O&G Digital Transformation"
                   />
                 </div>
                 <div class="card-body">
@@ -271,6 +273,7 @@
                   <img
                     class="card-img-top w-100 object-fit-contain"
                     src="assets/img/portfolio/team_huddle.png"
+                    alt="Enterprise Transformation Strategy"
                   />
                 </div>
                 <div class="card-body">
@@ -293,6 +296,7 @@
                   <img
                     class="card-img-top w-100 object-fit-contain"
                     src="assets/img/portfolio/web3_staking.jpg"
+                    alt="Web3 Staking Node Monitor"
                   />
                 </div>
                 <div class="card-body">
@@ -318,6 +322,7 @@
                   <img
                     class="card-img-top img-thumbnail"
                     src="assets/img/portfolio/website_hero.png"
+                    alt="This Website"
                   />
                 </div>
                 <div class="card-body">
@@ -343,6 +348,7 @@
                   <img
                     class="card-img-top img-thumbnail"
                     src="assets/img/portfolio/statue_liberty_futuristic_dall-e_16x9.png"
+                    alt="Gen AI for Civic Engagement"
                   />
                 </div>
                 <div class="card-body">
@@ -378,28 +384,77 @@
             </p>
           </div>
 
-          <div class="row m-auto" data-aos="fade-in">
-            <div class="info col-lg-4 d-flex w-auto h-100 me-2 mt-2">
+          <div class="row m-auto mb-2" data-aos="fade-in">
+            <a class="info col-lg-2" href="https://www.linkedin.com/in/patrick-saul-7b5721b1/">
               <div class="linkedin d-flex align-items-center">
-                <a
-                  class="d-flex align-items-center"
-                  href="https://www.linkedin.com/in/patrick-saul-7b5721b1/"
-                >
-                  <i class="bi bi-linkedin d-flex"></i>
-                  <h4 class="m-0 d-flex">LinkedIn</h4>
-                </a>
+                <i class="bi bi-linkedin d-flex"></i>
+                <h4 class="p-0 ms-2 mb-0">LinkedIn</h4>
               </div>
-            </div>
-            <div class="info col-lg-4 d-flex w-auto h-100 mt-2 me-2">
-              <div class="mail d-flex align-items-center">
-                <a class="d-flex align-items-center">
-                  <i class="bi bi-envelope d-flex" style="color: gray"></i>
-                  <h4 class="m-0 d-flex" style="color: gray">Email (Coming Soon)</h4>
-                </a>
-              </div>
+            </a>
+          </div>
+          <div class="row m-auto" data-aos="fade-in">
+            <div id="formDiv" class="info col-lg-6">
+              <form class="needs-validation" novalidate>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-envelope"></i>
+                  <h4 class="p-0 ms-2 mb-0">Email</h4>
+                </div>
+                <div class="mb-3">
+                  <label for="sender-name" class="col-form-label">Your Name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="sender-name"
+                    name="sender-name"
+                    required
+                  />
+                  <div class="invalid-feedback">Please include your name</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="sender-email" class="col-form-label">Your Email:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="sender-email"
+                    name="sender-email"
+                    required
+                  />
+                  <div class="invalid-feedback">Please provide a valid email</div>
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="col-form-label">Subject:</label>
+                  <input type="text" class="form-control" id="subject" name="subject" required />
+                  <div class="invalid-feedback">Please include a subject</div>
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea
+                    class="form-control"
+                    rows="10"
+                    id="message-text"
+                    name="message-text"
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">Please include a message</div>
+                </div>
+                <div class="d-flex justify-content-end align-items-end">
+                  <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+                <div>
+                  <div id="email-success" class="alert alert-success mt-3" role="alert">
+                    Your message was sent successfully!
+                  </div>
+                  <div id="email-fail" class="alert alert-danger mt-3" role="alert">
+                    There was an error sending your message. Please try again later.
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
+        <script src="email/submit_email.js" type="text/javascript"></script>
+        <script src="email/serialize_json.js" type="text/javascript"></script>
       </section>
       <!-- End Contact Section -->
     </main>
