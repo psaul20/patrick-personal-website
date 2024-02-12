@@ -11,10 +11,12 @@
       function (event) {
         event.preventDefault()
         event.stopPropagation()
+        $('#email-fail').hide()
+        $('#email-success').hide()
         if (form.checkValidity()) {
           var data = JSON.stringify($(form).serializeJSON())
           $.ajax({
-            url: 'http://127.0.0.1:8080',
+            url: 'https://us-central1-personal-website-20.cloudfunctions.net/mail-send',
             contentType: 'application/json; charset=utf-8',
             // dataType: 'json',
             type: 'POST',

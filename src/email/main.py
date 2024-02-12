@@ -41,7 +41,7 @@ def sendEmail(request: flask.Request) -> flask.typing.ResponseReturnValue:
                     "from": "Patricksaul.com Mail <mailgun@mail.patricksaul.com>",
                     "to": "Patrick Saul <patricksaul20@gmail.com>",
                     "subject": request_json["subject"],
-                    "text": "Sender: {}\nSender Email: {}\n\n{}".format(request_json["sender-name"], request_json["sender-email"], request_json["message-text"]),
+                    "text": "From: {} ({})\n\n{}".format(request_json["sender-name"], request_json["sender-email"], request_json["message-text"]),
                 },
                 timeout=5,
             )
