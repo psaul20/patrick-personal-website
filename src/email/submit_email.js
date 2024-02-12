@@ -16,18 +16,16 @@
           $.ajax({
             url: 'http://127.0.0.1:8080',
             contentType: 'application/json; charset=utf-8',
-            dataType: 'json',
+            // dataType: 'json',
             type: 'POST',
             enctype: 'gzip, deflate, br',
             data: data,
             success: function (response) {
-              if (response.status == 'success') {
-                $('#email-success').show()
-              } else {
-                $('#email-fail').show()
-              }
+              console.log('Success Response')
+              $('#email-success').show()
             },
             error: function (response) {
+              console.log('Error Response')
               $('#email-fail').show()
             }
           })

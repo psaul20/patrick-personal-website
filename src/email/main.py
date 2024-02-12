@@ -26,7 +26,8 @@ def sendEmail(request: flask.Request) -> flask.typing.ResponseReturnValue:
         return ("", 204, headers)
     
     # Set CORS headers for the main request
-    headers = {"Access-Control-Allow-Origin": "*"}
+    headers = {"Access-Control-Allow-Origin": "*",
+               "Content-Type": "text"}
     
     if request.method == "POST":
         try: 
@@ -45,7 +46,7 @@ def sendEmail(request: flask.Request) -> flask.typing.ResponseReturnValue:
                 timeout=5,
             )
             logging.info("Email sent")
-            return "Email sent", 200
+            return ("", 200, headers)
         except Exception as e:
             logging.error("Error sending email: {}".format(e))
     
